@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"><title>Climate Change Data | VishwaNova 2026</title><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../shared/experience-kit.css" />
+    <link rel="stylesheet" href="../shared/mobile.css" />
+    <link rel="stylesheet" href="../shared/soundkit.css" />  <link rel="stylesheet" href="../shared/fx-kit.css" />
+  <link rel="stylesheet" href="../shared/engagement-kit.css" />
+</head><body><div id="loader"><div class="loader-content"><div class="loader-ring"></div><p class="loader-text">Loading Climate Change Data...</p></div></div><audio id="bg-audio" loop src="https://cdn.pixabay.com/audio/2022/03/10/audio_82c2e0f2f3.mp3?v=1"></audio><button id="audio-toggle">🎵</button><main id="app"><canvas id="c"></canvas><div id="hero-text"><h1>CLIMATE CHANGE DATA</h1><p class="sub">Drag slider to see CO2 rise over 200 years</p></div><div style="position:fixed;bottom:80px;left:50%;transform:translateX(-50%);z-index:10;background:rgba(0,0,0,.7);padding:10px 20px;border-radius:20px;backdrop-filter:blur(5px)"><input type="range" id="yearSlider" min="1850" max="2050" value="1850" style="width:250px;accent-color:#00ffcc"><p id="yearLabel" style="text-align:center;color:#00ffcc;font-size:.9rem;margin-top:5px">1850</p></div></main><footer class="github-badge"><a href="https://github.com/shresss-27" target="_blank">⭐ GitHub</a><span>VishwaNova 2026</span></footer><script src="../shared/soundkit.js" defer></script>
+    <script src="../shared/experience-kit.js" defer></script>
+    <script src="../shared/engagement-kit.js" defer></script>
+    <script src="../shared/experience-configs-1-21.js" defer></script>
+    <script src="../shared/fx-kit.js" defer></script>
+    <script src="script.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const parts = location.pathname.split("/").filter(Boolean);
+        const slug = parts[parts.length - 2] || "";
+        const cfg = window.WeboReelsExperienceConfigs1to21?.[slug] || { title: document.title };
+        window.WeboReelsExperienceKit?.init?.(cfg);
+      });
+    </script>
+</body></html>
